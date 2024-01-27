@@ -1,0 +1,32 @@
+[2024-01-27T19:58:49.655+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: exemplo_xcom.tsk1 manual__2024-01-27T19:58:47.963288+00:00 [queued]>
+[2024-01-27T19:58:49.678+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: exemplo_xcom.tsk1 manual__2024-01-27T19:58:47.963288+00:00 [queued]>
+[2024-01-27T19:58:49.678+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-27T19:58:49.678+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-01-27T19:58:49.678+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-27T19:58:49.712+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): tsk1> on 2024-01-27 19:58:47.963288+00:00
+[2024-01-27T19:58:49.719+0000] {standard_task_runner.py:55} INFO - Started process 76292 to run task
+[2024-01-27T19:58:49.724+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'exemplo_xcom', 'tsk1', 'manual__2024-01-27T19:58:47.963288+00:00', '--job-id', '94', '--raw', '--subdir', 'DAGS_FOLDER/xcom.py', '--cfg-path', '/tmp/tmp3xi98mge']
+[2024-01-27T19:58:49.725+0000] {standard_task_runner.py:83} INFO - Job 94: Subtask tsk1
+[2024-01-27T19:58:49.838+0000] {task_command.py:388} INFO - Running <TaskInstance: exemplo_xcom.tsk1 manual__2024-01-27T19:58:47.963288+00:00 [running]> on host cd1b9fd02609
+[2024-01-27T19:58:50.007+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=exemplo_xcom
+AIRFLOW_CTX_TASK_ID=tsk1
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-27T19:58:47.963288+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-27T19:58:47.963288+00:00
+[2024-01-27T19:58:50.008+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/xcom.py", line 14, in task_write
+    kwarg('ti').xcom_push(key='valorxcom1',value=10200)
+TypeError: 'dict' object is not callable
+[2024-01-27T19:58:50.029+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=exemplo_xcom, task_id=tsk1, execution_date=20240127T195847, start_date=20240127T195849, end_date=20240127T195850
+[2024-01-27T19:58:50.059+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 94 for task tsk1 ('dict' object is not callable; 76292)
+[2024-01-27T19:58:50.101+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-27T19:58:50.156+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
