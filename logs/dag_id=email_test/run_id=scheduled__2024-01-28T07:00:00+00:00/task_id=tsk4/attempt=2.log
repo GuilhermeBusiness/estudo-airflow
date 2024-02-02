@@ -1,0 +1,39 @@
+[2024-01-28T08:00:19.138+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: email_test.tsk4 scheduled__2024-01-28T07:00:00+00:00 [queued]>
+[2024-01-28T08:00:19.156+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: email_test.tsk4 scheduled__2024-01-28T07:00:00+00:00 [queued]>
+[2024-01-28T08:00:19.156+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-28T08:00:19.156+0000] {taskinstance.py:1280} INFO - Starting attempt 2 of 2
+[2024-01-28T08:00:19.157+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-28T08:00:19.185+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): tsk4> on 2024-01-28 07:00:00+00:00
+[2024-01-28T08:00:19.193+0000] {standard_task_runner.py:55} INFO - Started process 37623 to run task
+[2024-01-28T08:00:19.196+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'email_test', 'tsk4', 'scheduled__2024-01-28T07:00:00+00:00', '--job-id', '224', '--raw', '--subdir', 'DAGS_FOLDER/email.py', '--cfg-path', '/tmp/tmp9enugupj']
+[2024-01-28T08:00:19.197+0000] {standard_task_runner.py:83} INFO - Job 224: Subtask tsk4
+[2024-01-28T08:00:19.277+0000] {task_command.py:388} INFO - Running <TaskInstance: email_test.tsk4 scheduled__2024-01-28T07:00:00+00:00 [running]> on host 5b3777e64f6c
+[2024-01-28T08:00:19.364+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=guilherme.ribeiro.business@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=email_test
+AIRFLOW_CTX_TASK_ID=tsk4
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-28T07:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-28T07:00:00+00:00
+[2024-01-28T08:00:19.365+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2024-01-28T08:00:19.366+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'exit 1']
+[2024-01-28T08:00:19.380+0000] {subprocess.py:86} INFO - Output:
+[2024-01-28T08:00:19.383+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-01-28T08:00:19.399+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-01-28T08:00:19.407+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=email_test, task_id=tsk4, execution_date=20240128T070000, start_date=20240128T080019, end_date=20240128T080019
+[2024-01-28T08:00:19.449+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/email.py:152: RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+  send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+
+[2024-01-28T08:00:19.449+0000] {email.py:268} INFO - Email alerting: attempt 1
+[2024-01-28T08:00:23.590+0000] {email.py:280} INFO - Sent an alert email to ['guilherme.ribeiro.business@gmail.com']
+[2024-01-28T08:00:27.024+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 224 for task tsk4 (Bash command failed. The command returned a non-zero exit code 1.; 37623)
+[2024-01-28T08:00:27.074+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-01-28T08:00:27.108+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
