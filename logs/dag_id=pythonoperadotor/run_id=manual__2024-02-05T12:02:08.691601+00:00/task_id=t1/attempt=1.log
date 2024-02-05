@@ -1,0 +1,23 @@
+[2024-02-05T12:02:11.580+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pythonoperadotor.t1 manual__2024-02-05T12:02:08.691601+00:00 [queued]>
+[2024-02-05T12:02:11.602+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pythonoperadotor.t1 manual__2024-02-05T12:02:08.691601+00:00 [queued]>
+[2024-02-05T12:02:11.602+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-05T12:02:11.602+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-02-05T12:02:11.602+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-05T12:02:11.639+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): t1> on 2024-02-05 12:02:08.691601+00:00
+[2024-02-05T12:02:11.656+0000] {standard_task_runner.py:55} INFO - Started process 1631 to run task
+[2024-02-05T12:02:11.665+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'pythonoperadotor', 't1', 'manual__2024-02-05T12:02:08.691601+00:00', '--job-id', '768', '--raw', '--subdir', 'DAGS_FOLDER/pythonoperator.py', '--cfg-path', '/tmp/tmpk3d6ml7_']
+[2024-02-05T12:02:11.671+0000] {standard_task_runner.py:83} INFO - Job 768: Subtask t1
+[2024-02-05T12:02:11.862+0000] {task_command.py:388} INFO - Running <TaskInstance: pythonoperadotor.t1 manual__2024-02-05T12:02:08.691601+00:00 [running]> on host f8c98ce69515
+[2024-02-05T12:02:12.200+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pythonoperadotor
+AIRFLOW_CTX_TASK_ID=t1
+AIRFLOW_CTX_EXECUTION_DATE=2024-02-05T12:02:08.691601+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-02-05T12:02:08.691601+00:00
+[2024-02-05T12:02:12.253+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-02-05T12:02:12.298+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=pythonoperadotor, task_id=t1, execution_date=20240205T120208, start_date=20240205T120211, end_date=20240205T120212
+[2024-02-05T12:02:12.401+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-02-05T12:02:12.455+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
