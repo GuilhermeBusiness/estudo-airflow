@@ -1,0 +1,25 @@
+[2024-02-10T18:54:18.056+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: httpsensor.check_api manual__2024-02-10T18:54:16.171942+00:00 [queued]>
+[2024-02-10T18:54:18.113+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: httpsensor.check_api manual__2024-02-10T18:54:16.171942+00:00 [queued]>
+[2024-02-10T18:54:18.113+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-10T18:54:18.113+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-02-10T18:54:18.116+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-10T18:54:18.270+0000] {taskinstance.py:1300} INFO - Executing <Task(HttpSensor): check_api> on 2024-02-10 18:54:16.171942+00:00
+[2024-02-10T18:54:18.339+0000] {standard_task_runner.py:55} INFO - Started process 24462 to run task
+[2024-02-10T18:54:18.353+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'httpsensor', 'check_api', 'manual__2024-02-10T18:54:16.171942+00:00', '--job-id', '904', '--raw', '--subdir', 'DAGS_FOLDER/sensors.py', '--cfg-path', '/tmp/tmpmkpuawjg']
+[2024-02-10T18:54:18.354+0000] {standard_task_runner.py:83} INFO - Job 904: Subtask check_api
+[2024-02-10T18:54:18.582+0000] {task_command.py:388} INFO - Running <TaskInstance: httpsensor.check_api manual__2024-02-10T18:54:16.171942+00:00 [running]> on host f8c98ce69515
+[2024-02-10T18:54:18.882+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=httpsensor
+AIRFLOW_CTX_TASK_ID=check_api
+AIRFLOW_CTX_EXECUTION_DATE=2024-02-10T18:54:16.171942+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-02-10T18:54:16.171942+00:00
+[2024-02-10T18:54:18.886+0000] {http.py:122} INFO - Poking: entries
+[2024-02-10T18:54:18.917+0000] {base.py:73} INFO - Using connection ID 'connection' for task execution.
+[2024-02-10T18:54:20.980+0000] {base.py:228} INFO - Success criteria met. Exiting.
+[2024-02-10T18:54:21.038+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=httpsensor, task_id=check_api, execution_date=20240210T185416, start_date=20240210T185418, end_date=20240210T185421
+[2024-02-10T18:54:21.118+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-02-10T18:54:21.230+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
