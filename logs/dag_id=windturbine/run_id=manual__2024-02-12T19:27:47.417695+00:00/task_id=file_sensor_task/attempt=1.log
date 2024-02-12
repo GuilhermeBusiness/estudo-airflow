@@ -1,0 +1,27 @@
+[2024-02-12T19:27:49.116+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: windturbine.file_sensor_task manual__2024-02-12T19:27:47.417695+00:00 [queued]>
+[2024-02-12T19:27:49.131+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: windturbine.file_sensor_task manual__2024-02-12T19:27:47.417695+00:00 [queued]>
+[2024-02-12T19:27:49.131+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-12T19:27:49.131+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-02-12T19:27:49.131+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-12T19:27:49.151+0000] {taskinstance.py:1300} INFO - Executing <Task(FileSensor): file_sensor_task> on 2024-02-12 19:27:47.417695+00:00
+[2024-02-12T19:27:49.159+0000] {standard_task_runner.py:55} INFO - Started process 2195 to run task
+[2024-02-12T19:27:49.165+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'windturbine', 'file_sensor_task', 'manual__2024-02-12T19:27:47.417695+00:00', '--job-id', '1134', '--raw', '--subdir', 'DAGS_FOLDER/windturbine.py', '--cfg-path', '/tmp/tmppfrp4hml']
+[2024-02-12T19:27:49.167+0000] {standard_task_runner.py:83} INFO - Job 1134: Subtask file_sensor_task
+[2024-02-12T19:27:49.266+0000] {task_command.py:388} INFO - Running <TaskInstance: windturbine.file_sensor_task manual__2024-02-12T19:27:47.417695+00:00 [running]> on host b5b8d61630c3
+[2024-02-12T19:27:49.397+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=guilherme.ribeiro.business@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=windturbine
+AIRFLOW_CTX_TASK_ID=file_sensor_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-02-12T19:27:47.417695+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-02-12T19:27:47.417695+00:00
+[2024-02-12T19:27:49.416+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:27:49.417+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:27:49.417+0000] {filesystem.py:69} INFO - Found File /opt/***/data/data.json last modified: 20240212192744
+[2024-02-12T19:27:49.417+0000] {base.py:228} INFO - Success criteria met. Exiting.
+[2024-02-12T19:27:49.437+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=windturbine, task_id=file_sensor_task, execution_date=20240212T192747, start_date=20240212T192749, end_date=20240212T192749
+[2024-02-12T19:27:49.497+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-02-12T19:27:49.570+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

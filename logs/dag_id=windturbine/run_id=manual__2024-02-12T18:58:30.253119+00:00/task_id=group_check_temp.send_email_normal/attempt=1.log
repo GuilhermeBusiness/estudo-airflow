@@ -1,0 +1,28 @@
+[2024-02-12T18:58:47.350+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: windturbine.group_check_temp.send_email_normal manual__2024-02-12T18:58:30.253119+00:00 [queued]>
+[2024-02-12T18:58:47.394+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: windturbine.group_check_temp.send_email_normal manual__2024-02-12T18:58:30.253119+00:00 [queued]>
+[2024-02-12T18:58:47.395+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-12T18:58:47.395+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-02-12T18:58:47.395+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-12T18:58:47.447+0000] {taskinstance.py:1300} INFO - Executing <Task(EmailOperator): group_check_temp.send_email_normal> on 2024-02-12 18:58:30.253119+00:00
+[2024-02-12T18:58:47.456+0000] {standard_task_runner.py:55} INFO - Started process 608 to run task
+[2024-02-12T18:58:47.467+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'windturbine', 'group_check_temp.send_email_normal', 'manual__2024-02-12T18:58:30.253119+00:00', '--job-id', '1095', '--raw', '--subdir', 'DAGS_FOLDER/windturbine.py', '--cfg-path', '/tmp/tmpbpct9b_y']
+[2024-02-12T18:58:47.470+0000] {standard_task_runner.py:83} INFO - Job 1095: Subtask group_check_temp.send_email_normal
+[2024-02-12T18:58:47.597+0000] {task_command.py:388} INFO - Running <TaskInstance: windturbine.group_check_temp.send_email_normal manual__2024-02-12T18:58:30.253119+00:00 [running]> on host b5b8d61630c3
+[2024-02-12T18:58:47.784+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=guilherme.ribeiro.business@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=windturbine
+AIRFLOW_CTX_TASK_ID=group_check_temp.send_email_normal
+AIRFLOW_CTX_EXECUTION_DATE=2024-02-12T18:58:30.253119+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-02-12T18:58:30.253119+00:00
+[2024-02-12T18:58:47.821+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/email.py:152: RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+  send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+
+[2024-02-12T18:58:47.825+0000] {email.py:268} INFO - Email alerting: attempt 1
+[2024-02-12T18:58:51.568+0000] {email.py:280} INFO - Sent an alert email to ['guilherme.ribeiro.business@gmail.com']
+[2024-02-12T18:58:55.580+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=windturbine, task_id=group_check_temp.send_email_normal, execution_date=20240212T185830, start_date=20240212T185847, end_date=20240212T185855
+[2024-02-12T18:58:55.636+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-02-12T18:58:55.668+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

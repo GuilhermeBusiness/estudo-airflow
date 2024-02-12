@@ -1,0 +1,428 @@
+[2024-02-12T19:48:05.310+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: windturbine.file_sensor_task scheduled__2024-02-12T19:45:00+00:00 [queued]>
+[2024-02-12T19:48:05.348+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: windturbine.file_sensor_task scheduled__2024-02-12T19:45:00+00:00 [queued]>
+[2024-02-12T19:48:05.349+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-12T19:48:05.349+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2024-02-12T19:48:05.349+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-12T19:48:05.410+0000] {taskinstance.py:1300} INFO - Executing <Task(FileSensor): file_sensor_task> on 2024-02-12 19:45:00+00:00
+[2024-02-12T19:48:05.429+0000] {standard_task_runner.py:55} INFO - Started process 3258 to run task
+[2024-02-12T19:48:05.442+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'windturbine', 'file_sensor_task', 'scheduled__2024-02-12T19:45:00+00:00', '--job-id', '1151', '--raw', '--subdir', 'DAGS_FOLDER/windturbine.py', '--cfg-path', '/tmp/tmphmfgs8uy']
+[2024-02-12T19:48:05.445+0000] {standard_task_runner.py:83} INFO - Job 1151: Subtask file_sensor_task
+[2024-02-12T19:48:05.619+0000] {task_command.py:388} INFO - Running <TaskInstance: windturbine.file_sensor_task scheduled__2024-02-12T19:45:00+00:00 [running]> on host b5b8d61630c3
+[2024-02-12T19:48:05.821+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=guilherme.ribeiro.business@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=windturbine
+AIRFLOW_CTX_TASK_ID=file_sensor_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-02-12T19:45:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-02-12T19:45:00+00:00
+[2024-02-12T19:48:05.858+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:48:05.859+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:48:15.890+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:48:15.891+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:48:25.908+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:48:25.909+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:48:35.948+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:48:35.949+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:48:45.974+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:48:45.978+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:48:55.999+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:48:55.999+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:49:06.039+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:49:06.040+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:49:16.060+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:49:16.060+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:49:26.086+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:49:26.087+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:49:36.106+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:49:36.107+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:49:46.126+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:49:46.128+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:49:56.149+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:49:56.149+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:50:06.174+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:50:06.175+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:50:16.204+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:50:16.204+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:50:26.226+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:50:26.226+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:50:36.247+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:50:36.248+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:50:46.272+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:50:46.272+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:50:56.300+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:50:56.300+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:51:06.321+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:51:06.322+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:51:16.337+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:51:16.338+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:51:26.353+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:51:26.354+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:51:36.372+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:51:36.373+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:51:46.397+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:51:46.397+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:51:56.414+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:51:56.414+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:52:06.430+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:52:06.431+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:52:16.446+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:52:16.447+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:52:26.469+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:52:26.469+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:52:36.499+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:52:36.500+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:52:46.533+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:52:46.537+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:52:56.558+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:52:56.559+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:53:06.575+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:53:06.576+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:53:16.594+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:53:16.594+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:53:26.615+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:53:26.615+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:53:36.642+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:53:36.643+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:53:46.661+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:53:46.661+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:53:56.695+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:53:56.696+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:54:06.717+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:54:06.718+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:54:16.737+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:54:16.737+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:54:26.757+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:54:26.758+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:54:36.778+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:54:36.779+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:54:46.796+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:54:46.796+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:54:56.818+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:54:56.818+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:55:06.845+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:55:06.846+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:55:16.865+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:55:16.865+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:55:26.902+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:55:26.902+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:55:36.920+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:55:36.921+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:55:46.947+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:55:46.948+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:55:56.968+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:55:56.969+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:56:07.003+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:56:07.003+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:56:17.020+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:56:17.020+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:56:27.041+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:56:27.041+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:56:37.064+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:56:37.065+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:56:47.095+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:56:47.095+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:56:57.117+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:56:57.118+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:57:07.134+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:57:07.134+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:57:17.163+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:57:17.164+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:57:27.181+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:57:27.182+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:57:37.216+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:57:37.216+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:57:47.246+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:57:47.247+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:57:57.269+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:57:57.270+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:58:07.306+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:58:07.306+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:58:17.324+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:58:17.324+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:58:27.343+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:58:27.343+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:58:37.371+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:58:37.372+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:58:47.390+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:58:47.391+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:58:57.410+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:58:57.410+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:59:07.426+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:59:07.426+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:59:17.452+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:59:17.453+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:59:27.470+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:59:27.470+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:59:37.491+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:59:37.491+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:59:47.510+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:59:47.510+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T19:59:57.528+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T19:59:57.528+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:00:07.565+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:00:07.565+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:00:17.582+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:00:17.582+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:00:27.611+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:00:27.613+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:00:37.638+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:00:37.639+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:00:47.658+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:00:47.658+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:00:57.677+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:00:57.679+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:01:07.699+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:01:07.700+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:01:17.723+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:01:17.723+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:01:27.750+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:01:27.751+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:01:37.771+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:01:37.772+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:01:47.796+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:01:47.796+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:01:57.817+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:01:57.817+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:02:07.836+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:02:07.836+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:02:17.855+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:02:17.855+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:02:27.871+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:02:27.872+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:02:37.894+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:02:37.895+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:02:47.915+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:02:47.915+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:02:57.935+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:02:57.936+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:03:07.955+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:03:07.956+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:03:17.976+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:03:17.976+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:03:28.009+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:03:28.009+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:03:38.034+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:03:38.035+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:03:48.050+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:03:48.050+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:03:58.068+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:03:58.069+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:04:08.089+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:04:08.089+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:04:18.110+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:04:18.111+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:04:28.129+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:04:28.129+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:04:38.160+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:04:38.161+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:04:48.180+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:04:48.180+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:04:58.200+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:04:58.201+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:05:08.222+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:05:08.222+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:05:18.240+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:05:18.241+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:05:28.267+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:05:28.267+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:05:38.284+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:05:38.285+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:05:48.303+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:05:48.304+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:05:58.327+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:05:58.327+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:06:08.344+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:06:08.345+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:06:18.362+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:06:18.362+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:06:28.380+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:06:28.381+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:06:38.410+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:06:38.410+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:06:48.428+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:06:48.428+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:06:58.450+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:06:58.450+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:07:08.472+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:07:08.472+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:07:18.495+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:07:18.496+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:07:28.514+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:07:28.515+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:07:38.544+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:07:38.545+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:07:48.571+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:07:48.571+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:07:58.589+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:07:58.589+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:08:08.611+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:08:08.611+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:08:18.629+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:08:18.629+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:08:28.656+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:08:28.657+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:08:38.681+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:08:38.682+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:08:48.714+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:08:48.714+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:08:58.731+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:08:58.731+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:09:08.746+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:09:08.747+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:09:18.772+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:09:18.773+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:09:28.792+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:09:28.792+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:09:38.816+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:09:38.817+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:09:48.843+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:09:48.844+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:09:58.859+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:09:58.860+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:10:08.892+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:10:08.892+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:10:18.928+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:10:18.929+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:10:28.951+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:10:28.951+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:10:38.967+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:10:38.968+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:10:48.995+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:10:48.995+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:10:59.013+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:10:59.013+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:11:09.045+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:11:09.045+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:11:19.063+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:11:19.064+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:11:29.081+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:11:29.081+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:11:39.099+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:11:39.100+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:11:49.117+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:11:49.117+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:11:59.136+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:11:59.136+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:12:09.157+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:12:09.157+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:12:19.176+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:12:19.177+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:12:29.210+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:12:29.210+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:12:39.228+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:12:39.228+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:12:49.248+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:12:49.248+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:12:59.272+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:12:59.272+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:13:09.293+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:13:09.293+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:13:19.320+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:13:19.320+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:13:29.338+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:13:29.338+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:13:39.357+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:13:39.358+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:13:49.390+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:13:49.391+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:13:59.417+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:13:59.418+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:14:09.442+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:14:09.442+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:14:19.462+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:14:19.462+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:14:29.478+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:14:29.478+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:14:39.499+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:14:39.499+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:14:49.518+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:14:49.519+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:14:59.549+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:14:59.550+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:15:09.572+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:15:09.572+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:15:19.591+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:15:19.592+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:15:29.609+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:15:29.610+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:15:39.636+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:15:39.636+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:15:49.658+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:15:49.658+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:15:59.679+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:15:59.680+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:16:09.704+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:16:09.704+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:16:19.721+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:16:19.722+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:16:29.741+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:16:29.741+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:16:39.765+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:16:39.765+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:16:49.788+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:16:49.788+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:16:59.806+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:16:59.806+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:17:09.835+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:17:09.835+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:17:19.863+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:17:19.864+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:17:29.886+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:17:29.887+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:17:39.914+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:17:39.915+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:17:49.934+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:17:49.934+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:17:59.949+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:17:59.949+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:18:09.967+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:18:09.967+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:18:19.986+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:18:19.986+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:18:30.004+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:18:30.005+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:18:40.025+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:18:40.026+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:18:50.043+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:18:50.044+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:19:00.060+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:19:00.061+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:19:10.078+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:19:10.078+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:19:20.096+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:19:20.096+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:19:30.113+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:19:30.114+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:19:40.143+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:19:40.144+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:19:50.174+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:19:50.175+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:20:00.192+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:20:00.193+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:20:10.210+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:20:10.211+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:20:20.231+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:20:20.231+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:20:30.263+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:20:30.264+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:20:40.282+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:20:40.283+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:20:50.301+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:20:50.301+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:21:00.317+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:21:00.318+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:21:10.336+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:21:10.336+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:21:20.370+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:21:20.371+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:21:30.398+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:21:30.399+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:21:40.418+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:21:40.418+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:21:50.443+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:21:50.444+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
+[2024-02-12T20:22:00.471+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2024-02-12T20:22:00.471+0000] {filesystem.py:64} INFO - Poking for file /opt/***/data/data.json
