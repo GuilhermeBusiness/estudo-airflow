@@ -1,0 +1,27 @@
+[2024-02-10T22:07:28.876+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bancodedados.query_data manual__2024-02-10T22:07:23.138913+00:00 [queued]>
+[2024-02-10T22:07:28.896+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bancodedados.query_data manual__2024-02-10T22:07:23.138913+00:00 [queued]>
+[2024-02-10T22:07:28.896+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-10T22:07:28.896+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-02-10T22:07:28.897+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-10T22:07:28.930+0000] {taskinstance.py:1300} INFO - Executing <Task(PostgresOperator): query_data> on 2024-02-10 22:07:23.138913+00:00
+[2024-02-10T22:07:28.937+0000] {standard_task_runner.py:55} INFO - Started process 34751 to run task
+[2024-02-10T22:07:28.942+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'bancodedados', 'query_data', 'manual__2024-02-10T22:07:23.138913+00:00', '--job-id', '922', '--raw', '--subdir', 'DAGS_FOLDER/bancodedados.py', '--cfg-path', '/tmp/tmptn1827z9']
+[2024-02-10T22:07:28.943+0000] {standard_task_runner.py:83} INFO - Job 922: Subtask query_data
+[2024-02-10T22:07:29.029+0000] {task_command.py:388} INFO - Running <TaskInstance: bancodedados.query_data manual__2024-02-10T22:07:23.138913+00:00 [running]> on host f8c98ce69515
+[2024-02-10T22:07:29.127+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bancodedados
+AIRFLOW_CTX_TASK_ID=query_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-02-10T22:07:23.138913+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-02-10T22:07:23.138913+00:00
+[2024-02-10T22:07:29.127+0000] {sql.py:254} INFO - Executing: select * from teste
+[2024-02-10T22:07:29.140+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2024-02-10T22:07:29.555+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2024-02-10T22:07:29.562+0000] {sql.py:375} INFO - Running statement: select * from teste, parameters: None
+[2024-02-10T22:07:29.564+0000] {sql.py:384} INFO - Rows affected: 1
+[2024-02-10T22:07:29.617+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=bancodedados, task_id=query_data, execution_date=20240210T220723, start_date=20240210T220728, end_date=20240210T220729
+[2024-02-10T22:07:29.682+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-02-10T22:07:29.735+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

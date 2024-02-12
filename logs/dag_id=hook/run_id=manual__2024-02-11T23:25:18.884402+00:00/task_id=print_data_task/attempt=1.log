@@ -1,0 +1,25 @@
+[2024-02-11T23:25:25.789+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: hook.print_data_task manual__2024-02-11T23:25:18.884402+00:00 [queued]>
+[2024-02-11T23:25:25.802+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: hook.print_data_task manual__2024-02-11T23:25:18.884402+00:00 [queued]>
+[2024-02-11T23:25:25.802+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-11T23:25:25.802+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-02-11T23:25:25.802+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-11T23:25:25.818+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): print_data_task> on 2024-02-11 23:25:18.884402+00:00
+[2024-02-11T23:25:25.825+0000] {standard_task_runner.py:55} INFO - Started process 117174 to run task
+[2024-02-11T23:25:25.830+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'hook', 'print_data_task', 'manual__2024-02-11T23:25:18.884402+00:00', '--job-id', '1006', '--raw', '--subdir', 'DAGS_FOLDER/hooks.py', '--cfg-path', '/tmp/tmp9750uv6w']
+[2024-02-11T23:25:25.831+0000] {standard_task_runner.py:83} INFO - Job 1006: Subtask print_data_task
+[2024-02-11T23:25:25.947+0000] {task_command.py:388} INFO - Running <TaskInstance: hook.print_data_task manual__2024-02-11T23:25:18.884402+00:00 [running]> on host f8c98ce69515
+[2024-02-11T23:25:26.062+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=hook
+AIRFLOW_CTX_TASK_ID=print_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-02-11T23:25:18.884402+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-02-11T23:25:18.884402+00:00
+[2024-02-11T23:25:26.089+0000] {logging_mixin.py:137} INFO - Dados da tabela:
+[2024-02-11T23:25:26.090+0000] {logging_mixin.py:137} INFO - [1]
+[2024-02-11T23:25:26.090+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-02-11T23:25:26.113+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=hook, task_id=print_data_task, execution_date=20240211T232518, start_date=20240211T232525, end_date=20240211T232526
+[2024-02-11T23:25:26.166+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-02-11T23:25:26.202+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
